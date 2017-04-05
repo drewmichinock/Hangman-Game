@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Intro to JS: Hangman Game</title>
+    <title>Intro to JS: Hangman</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Optional theme -->
@@ -15,7 +15,29 @@
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 
-<body>
+<body onkeyup="acceptGuess(event)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1 class="text-center">Major Cities Hangman</h1>
+                <h3 class="text-center">Press any key to get started!</h3>
+                <br>
+                <p id="hangman" class="text-center"></p>
+                <br>
+                <p id="wins" class="text-center"></p>
+                <p id="chances" class="text-center"></p>
+                <p class="text-center">Already guessed</p>
+                <p id="lettersGuessed" class="text-center"></p>
+                <br><br>
+
+            </div>
+            <!-- end col-md-10 -->
+            <div class="col-md-1"></div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
 </body>
 
 </html>
